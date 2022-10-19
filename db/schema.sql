@@ -23,10 +23,13 @@ CREATE TABLE orders (
 );
 
 CREATE TABLE menu (
-  dishId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  dishName VARCHAR(25) NOT NULL,
-  dishPrice DECIMAL,
-  dishType DECIMAL
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  dishId INT,
+  dish_name VARCHAR(100) NOT NULL,
+  dish_img VARCHAR(100),
+  dish_desc VARCHAR(100) NOT NULL,
+  dish_price DECIMAL,
+  dish_type DECIMAL
 );
 
 CREATE TABLE orderDetails (

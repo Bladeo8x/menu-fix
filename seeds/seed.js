@@ -10,7 +10,7 @@ const ordersData = require("./orders.json");
 const orderDetailsData = require("./orderDetails.json");
 
 const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+  // await sequelize.sync({ force: true });
 
   await User.bulkCreate(UserData, {
     individualHooks: true,
